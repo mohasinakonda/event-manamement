@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisteredUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return ['Laravel' => app()->version()];
-});
+// Route::get('/', function () {
+//     return ['Laravel' => app()->version()];
+// });
 
-require __DIR__.'/auth.php';
+// Route::get('/', function () {
+//     return csrf_token();
+// });
+// Route::post('/register', [RegisteredUserController::class, 'store']);
+
+require __DIR__ . '/auth.php';
